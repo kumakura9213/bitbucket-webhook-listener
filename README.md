@@ -16,6 +16,8 @@ $ npm install
 
 ```sh
 $ cd bitbucket-webhook-listener
+$ cp config/.template-default.json config/default.json
+$ vi config/default.json
 $ cp template-env.yml env.yml
 $ vi env.yml
 ```
