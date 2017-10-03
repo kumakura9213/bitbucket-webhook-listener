@@ -1,0 +1,4 @@
+dev:
+  CHATWORK_API_TOKEN: XXX
+production:
+  CHATWORK_API_TOKEN: XXX

@@ -1,0 +1,2 @@
+[info][title]リポジトリが更新されました    {{{body.repository.full_name}}}
+[/title]リンク：{{{body.repository.links.html.href}}}[/info]

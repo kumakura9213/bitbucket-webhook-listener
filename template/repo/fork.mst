@@ -1,0 +1,2 @@
+[info][title]リポジトリがフォークされました    {{{body.repository.full_name}}}
+[/title]フォークした人：{{{body.actor.display_name}}}[/info]

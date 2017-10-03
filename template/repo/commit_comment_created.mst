@@ -1,0 +1,2 @@
+[info][title]コミットコメントが作成されました    {{{body.repository.full_name}}}    [{{{body.commit.hash}}}]
+[/title]コメント：{{{body.comment.content.raw}}}[/info]

@@ -1,0 +1,25 @@
+{
+  "event_keys": [
+    { "event_key": "pullrequest:created", "template_path": "template/pullrequest/created.mst" },
+    { "event_key": "pullrequest:updated", "template_path": "template/pullrequest/updated.mst" },
+    { "event_key": "pullrequest:approved", "template_path": "template/pullrequest/approved.mst" },
+    { "event_key": "pullrequest:unapproved", "template_path": "template/pullrequest/unapproved.mst" },
+    { "event_key": "pullrequest:fulfille", "template_path": "template/pullrequest/fulfille.mst" },
+    { "event_key": "pullrequest:rejected", "template_path": "template/pullrequest/rejected.mst" },
+    { "event_key": "pullrequest:comment_created", "template_path": "template/pullrequest/comment_created.mst" },
+    { "event_key": "pullrequest:comment_updated", "template_path": "template/pullrequest/comment_updated.mst" },
+    { "event_key": "pullrequest:comment_deleted", "template_path": "template/pullrequest/comment_deleted.mst" },
+    { "event_key": "repo:push", "template_path": "template/repo/push.mst" },
+    { "event_key": "repo:fork", "template_path": "template/repo/fork.mst" },
+    { "event_key": "repo:updated", "template_path": "template/repo/updated.mst" },
+    { "event_key": "repo:commit_comment_created", "template_path": "template/repo/commit_comment_created.mst" },
+    { "event_key": "repo:commit_status_created", "template_path": "template/repo/commit_status_created.mst" },
+    { "event_key": "repo:commit_status_updated", "template_path": "template/repo/commit_status_updated.mst"}
+  ],
+  "members": [
+    { "display_name": "Alice", "chatwork_member_id": "9000001"},
+    { "display_name": "Bob", "chatwork_member_id": "9000002"},
+    { "display_name": "Chalie", "chatwork_member_id": "9000003"},
+    { "display_name": "Dave", "chatwork_member_id": "9000004"}
+  ]
+}

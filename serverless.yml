@@ -1,0 +1,52 @@
+service: bitbucket-webhook-listener
+
+frameworkVersion: ">=1.23.0 <2.0.0"
+
+custom:
+  defaultStage: dev
+  environment: ${file(./env.yml)}
+
+provider:
+  name: aws
+  runtime: nodejs6.10
+  profile: default
+  stage: ${opt:stage, self:custom.defaultStage}
+  region: ap-northeast-1
+
+package:
+  exclude:
+    - coverage/**
+    - test/**
+
+functions:
+  pullrequest-notify:
+    handler: handler/pullrequest.notify
+    description: Notify to Chatwork.
+    memorySize: 128
+    timeout: 15
+    environment: ${self:custom.environment.${self:provider.stage}}
+    events:
+      - http:
+          path: pullrequest/notify/{room_id}
+          method: post
+          cors: true
+  repo-notify:
+    handler: handler/repo.notify
+    description: Notify to Chatwork.
+    memorySize: 128
+    timeout: 15
+    environment: ${self:custom.environment.${self:provider.stage}}
+    events:
+      - http:
+          path: repo/notify/{room_id}
+          method: post
+          cors: true
+
+resources:
+  Resources:
+    PullrequestDashnotifyLogGroup:
+      Properties:
+        RetentionInDays: "30"
+    RepoDashnotifyLogGroup:
+      Properties:
+        RetentionInDays: "30"

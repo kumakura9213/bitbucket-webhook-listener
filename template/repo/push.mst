@@ -1,0 +1,4 @@
+[info][title]リポジトリにプッシュされました    {{{body.repository.full_name}}}    {{{newBranchName}}}[{{{newBranchHash}}}]
+[/title]作成者　　：{{{author}}}
+メッセージ：{{{message}}}
+リンク　　：{{{link}}}[/info]

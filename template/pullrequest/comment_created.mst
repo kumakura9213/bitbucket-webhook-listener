@@ -1,0 +1,6 @@
+[info][title]プルリクエストのコメントが作成されました    {{{body.repository.full_name}}}    [{{{body.pullrequest.source.branch.name}}}]→[{{{body.pullrequest.destination.branch.name}}}]
+[/title]依頼者　　：{{{body.pullrequest.author.display_name}}}
+レビュアー：{{{reviewers}}}
+タイトル　：{{{body.pullrequest.title}}}
+説明　　　：{{{body.pullrequest.description}}}
+リンク　　：{{{body.pullrequest.links.html.href}}}[/info]
